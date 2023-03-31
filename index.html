@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainDiv">
+        <table class="tableSec">
+            <tr>
+                <td colspan="4" class="topHead"><p class="para">CITIZEN<sup>&reg</sup></p></td>
+            </tr>
+            <tr class="padding">
+                <td colspan="4"><input type="text" name="display" class="inputRow" placeholder="0" id="number" disabled></td>
+            </tr>
+            <tr class="borDer">
+                <td><button type="button" onclick="buttonsOpt('*')"><i class="fa-solid fa-xmark"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt('/')"><i class="fa-solid fa-divide"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt('-')"><i class="fa-solid fa-minus"></i></button></td>
+                <td class="btnHeight"><button type="button" onclick="buttonsOpt('+')"><i class="fa-solid fa-plus"></i></button></td>
+            </tr>
+            <tr class="borDer">
+                <td><button type="button" onclick="buttonsOpt(1)"><i class="fa-solid fa-1"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(2)"><i class="fa-solid fa-2"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(3)"><i class="fa-solid fa-3"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt('%')"><i class="fa-solid fa-percent"></i></button></td>
+            </tr>
+            <tr class="borDer">
+                <td><button type="button" onclick="buttonsOpt(4)"><i class="fa-solid fa-4"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(5)"><i class="fa-solid fa-5"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(6)"><i class="fa-solid fa-6"></i></button></td>
+                <td><button type="button" onclick="delBtn()"><i class="fa-solid fa-delete-left"></i></button></td>
+            </tr>
+            <tr class="borDer">
+                <td><button type="button" onclick="buttonsOpt(7)"><i class="fa-solid fa-7"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(8)"><i class="fa-solid fa-8"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(9)"><i class="fa-solid fa-9"></i></button></td>
+                <td><button type="button" onclick="allClr('')"><i class="fa-solid fa-c"></i></button></td>
+            </tr>
+            <tr class="borDer">
+                <td><button type="button" onclick="calculation()"><i class="fa-solid fa-equals"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt(0)"><i class="fa-solid fa-0"></i></button></td>
+                <td><button type="button" onclick="buttonsOpt('00')"><span class="symbolAnother">00</span></button></td>
+                <td><button type="button" onclick="buttonsOpt('.')"><i class="fa-solid symbol fa-circle"></i></button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f929a8100c.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
